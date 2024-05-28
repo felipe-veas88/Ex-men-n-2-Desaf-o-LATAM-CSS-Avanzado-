@@ -1,0 +1,178 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para el contenedor principal */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Asegura que el cuerpo del documento sea una columna */
+  font-family: "Century Gothic", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Contenedor del menú */
+.menu {
+  padding: 10px 20px;
+}
+
+.botonmenu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.menu:hover {
+  transition: opacity 0.2s;
+  opacity: 0.8;
+}
+
+/* Navbar */
+.navbar {
+  width: 180px;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el contenido se distribuya entre el inicio y el final */
+  padding: 0; /* Sin padding */
+  height: 100%;
+  border: 0; /* Sin bordes */
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 20px 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+  transition: background-color 0.3s;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+}
+
+.footer .logos img {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.footer .logos img:hover {
+  opacity: 0.7; /* Efecto hover */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 110%;
+}
+
+/* Dropdown */
+.dropdown {
+  width: 100%;
+  background-color: #343a40;
+  padding: 10px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  background-color: #343a40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative; /* Para asegurarnos de que el paginador esté bien posicionado */
+}
+
+/* Estilos de la tarjeta */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #495057;
+}
